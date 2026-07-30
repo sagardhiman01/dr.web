@@ -27,17 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth   = true;
         
         // TODO: Yahan apni real Gmail ID daalein (Jaise: dr.anilkumar@gmail.com)
-        $mail->Username   = 'YOUR_GMAIL_ADDRESS@gmail.com';
+        $mail->Username   = 'aadiphysiotherapy@gmail.com';
         
         // TODO: Yahan apna 16-digit Gmail App Password daalein (Spaces ke bina)
-        $mail->Password   = 'YOUR_16_DIGIT_APP_PASSWORD';
+        $mail->Password   = 'yvzkaqrvxiywzdjh';
         
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Recipients
-        $mail->setFrom('YOUR_GMAIL_ADDRESS@gmail.com', 'Dr. Anil Kumar Website');
-        $mail->addAddress('YOUR_GMAIL_ADDRESS@gmail.com'); // This is where the emails will be received
+        $mail->setFrom('aadiphysiotherapy@gmail.com', 'Dr. Anil Kumar Website');
+        $mail->addAddress('aadiphysiotherapy@gmail.com'); // This is where the emails will be received
         $mail->addReplyTo($email, $name);
 
         // Content
